@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2415F80C1ABD5808004EF0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F80B1ABD5808004EF0CE /* main.m */; };
+		2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F80E1ABD5808004EF0CE /* AppDelegate.m */; };
+		2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */; };
+		2415F8151ABD5808004EF0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8141ABD5808004EF0CE /* ViewController.m */; };
+		2415F8181ABD5808004EF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2415F8161ABD5808004EF0CE /* Main.storyboard */; };
+		2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2415F8191ABD5808004EF0CE /* Images.xcassets */; };
+		2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */; };
+		2415F8291ABD5808004EF0CE /* WspollokatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8281ABD5808004EF0CE /* WspollokatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2415F8231ABD5808004EF0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2415F7FE1ABD5808004EF0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2415F8051ABD5808004EF0CE;
+			remoteInfo = Wspollokator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2415F8061ABD5808004EF0CE /* Wspollokator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wspollokator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2415F80A1ABD5808004EF0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2415F80B1ABD5808004EF0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2415F80D1ABD5808004EF0CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2415F80E1ABD5808004EF0CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2415F8111ABD5808004EF0CE /* Wspollokator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wspollokator.xcdatamodel; sourceTree = "<group>"; };
+		2415F8131ABD5808004EF0CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2415F8141ABD5808004EF0CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2415F8171ABD5808004EF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2415F8191ABD5808004EF0CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2415F81C1ABD5808004EF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2415F8221ABD5808004EF0CE /* WspollokatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WspollokatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2415F8271ABD5808004EF0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2415F8281ABD5808004EF0CE /* WspollokatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WspollokatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2415F8031ABD5808004EF0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2415F81F1ABD5808004EF0CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2415F7FD1ABD5808004EF0CE = {
+			isa = PBXGroup;
+			children = (
+				2415F8081ABD5808004EF0CE /* Wspollokator */,
+				2415F8251ABD5808004EF0CE /* WspollokatorTests */,
+				2415F8071ABD5808004EF0CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2415F8071ABD5808004EF0CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2415F8061ABD5808004EF0CE /* Wspollokator.app */,
+				2415F8221ABD5808004EF0CE /* WspollokatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2415F8081ABD5808004EF0CE /* Wspollokator */ = {
+			isa = PBXGroup;
+			children = (
+				2415F80D1ABD5808004EF0CE /* AppDelegate.h */,
+				2415F80E1ABD5808004EF0CE /* AppDelegate.m */,
+				2415F8131ABD5808004EF0CE /* ViewController.h */,
+				2415F8141ABD5808004EF0CE /* ViewController.m */,
+				2415F8161ABD5808004EF0CE /* Main.storyboard */,
+				2415F8191ABD5808004EF0CE /* Images.xcassets */,
+				2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */,
+				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
+				2415F8091ABD5808004EF0CE /* Supporting Files */,
+			);
+			path = Wspollokator;
+			sourceTree = "<group>";
+		};
+		2415F8091ABD5808004EF0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2415F80A1ABD5808004EF0CE /* Info.plist */,
+				2415F80B1ABD5808004EF0CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2415F8251ABD5808004EF0CE /* WspollokatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2415F8281ABD5808004EF0CE /* WspollokatorTests.m */,
+				2415F8261ABD5808004EF0CE /* Supporting Files */,
+			);
+			path = WspollokatorTests;
+			sourceTree = "<group>";
+		};
+		2415F8261ABD5808004EF0CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2415F8271ABD5808004EF0CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2415F8051ABD5808004EF0CE /* Wspollokator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2415F82C1ABD5808004EF0CE /* Build configuration list for PBXNativeTarget "Wspollokator" */;
+			buildPhases = (
+				2415F8021ABD5808004EF0CE /* Sources */,
+				2415F8031ABD5808004EF0CE /* Frameworks */,
+				2415F8041ABD5808004EF0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wspollokator;
+			productName = Wspollokator;
+			productReference = 2415F8061ABD5808004EF0CE /* Wspollokator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2415F8211ABD5808004EF0CE /* WspollokatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2415F82F1ABD5808004EF0CE /* Build configuration list for PBXNativeTarget "WspollokatorTests" */;
+			buildPhases = (
+				2415F81E1ABD5808004EF0CE /* Sources */,
+				2415F81F1ABD5808004EF0CE /* Frameworks */,
+				2415F8201ABD5808004EF0CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2415F8241ABD5808004EF0CE /* PBXTargetDependency */,
+			);
+			name = WspollokatorTests;
+			productName = WspollokatorTests;
+			productReference = 2415F8221ABD5808004EF0CE /* WspollokatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2415F7FE1ABD5808004EF0CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "ADM-IT";
+				TargetAttributes = {
+					2415F8051ABD5808004EF0CE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					2415F8211ABD5808004EF0CE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2415F8051ABD5808004EF0CE;
+					};
+				};
+			};
+			buildConfigurationList = 2415F8011ABD5808004EF0CE /* Build configuration list for PBXProject "Wspollokator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2415F7FD1ABD5808004EF0CE;
+			productRefGroup = 2415F8071ABD5808004EF0CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2415F8051ABD5808004EF0CE /* Wspollokator */,
+				2415F8211ABD5808004EF0CE /* WspollokatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2415F8041ABD5808004EF0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2415F8181ABD5808004EF0CE /* Main.storyboard in Resources */,
+				2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */,
+				2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2415F8201ABD5808004EF0CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2415F8021ABD5808004EF0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */,
+				2415F80C1ABD5808004EF0CE /* main.m in Sources */,
+				2415F8151ABD5808004EF0CE /* ViewController.m in Sources */,
+				2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2415F81E1ABD5808004EF0CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2415F8291ABD5808004EF0CE /* WspollokatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2415F8241ABD5808004EF0CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2415F8051ABD5808004EF0CE /* Wspollokator */;
+			targetProxy = 2415F8231ABD5808004EF0CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2415F8161ABD5808004EF0CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2415F8171ABD5808004EF0CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2415F81C1ABD5808004EF0CE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2415F82A1ABD5808004EF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2415F82B1ABD5808004EF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2415F82D1ABD5808004EF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wspollokator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2415F82E1ABD5808004EF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wspollokator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2415F8301ABD5808004EF0CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WspollokatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wspollokator.app/Wspollokator";
+			};
+			name = Debug;
+		};
+		2415F8311ABD5808004EF0CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WspollokatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wspollokator.app/Wspollokator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2415F8011ABD5808004EF0CE /* Build configuration list for PBXProject "Wspollokator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2415F82A1ABD5808004EF0CE /* Debug */,
+				2415F82B1ABD5808004EF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2415F82C1ABD5808004EF0CE /* Build configuration list for PBXNativeTarget "Wspollokator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2415F82D1ABD5808004EF0CE /* Debug */,
+				2415F82E1ABD5808004EF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2415F82F1ABD5808004EF0CE /* Build configuration list for PBXNativeTarget "WspollokatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2415F8301ABD5808004EF0CE /* Debug */,
+				2415F8311ABD5808004EF0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2415F8111ABD5808004EF0CE /* Wspollokator.xcdatamodel */,
+			);
+			currentVersion = 2415F8111ABD5808004EF0CE /* Wspollokator.xcdatamodel */;
+			path = Wspollokator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2415F7FE1ABD5808004EF0CE /* Project object */;
+}
