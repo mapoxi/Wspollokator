@@ -10,11 +10,17 @@
 		2415F80C1ABD5808004EF0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F80B1ABD5808004EF0CE /* main.m */; };
 		2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F80E1ABD5808004EF0CE /* AppDelegate.m */; };
 		2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */; };
-		2415F8151ABD5808004EF0CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8141ABD5808004EF0CE /* ViewController.m */; };
-		2415F8181ABD5808004EF0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2415F8161ABD5808004EF0CE /* Main.storyboard */; };
+		2415F8181ABD5808004EF0CE /* Wspollokator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2415F8161ABD5808004EF0CE /* Wspollokator.storyboard */; };
 		2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2415F8191ABD5808004EF0CE /* Images.xcassets */; };
 		2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */; };
 		2415F8291ABD5808004EF0CE /* WspollokatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8281ABD5808004EF0CE /* WspollokatorTests.m */; };
+		2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */; };
+		2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */; };
+		2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */; };
+		24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */; };
+		24C85B9E1AC36444009D064D /* WspPeopleViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */; };
+		24C85B9F1AC36444009D064D /* WspPeopleViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */; };
+		24CEE96A1AC05CCC00A95F26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CEE9691AC05CCC00A95F26 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +40,25 @@
 		2415F80D1ABD5808004EF0CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2415F80E1ABD5808004EF0CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2415F8111ABD5808004EF0CE /* Wspollokator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wspollokator.xcdatamodel; sourceTree = "<group>"; };
-		2415F8131ABD5808004EF0CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2415F8141ABD5808004EF0CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2415F8171ABD5808004EF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2415F8171ABD5808004EF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Wspollokator.storyboard; sourceTree = "<group>"; };
 		2415F8191ABD5808004EF0CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2415F81C1ABD5808004EF0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2415F8221ABD5808004EF0CE /* WspollokatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WspollokatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2415F8271ABD5808004EF0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2415F8281ABD5808004EF0CE /* WspollokatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WspollokatorTests.m; sourceTree = "<group>"; };
+		2415F8331ABED6D4004EF0CE /* WspMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspMainMenuViewController.h; sourceTree = "<group>"; };
+		2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspMainMenuViewController.m; sourceTree = "<group>"; };
+		2415F8391ABEE56C004EF0CE /* WspPeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspPeopleTableViewController.h; sourceTree = "<group>"; };
+		2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleTableViewController.m; sourceTree = "<group>"; };
+		2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddPersonViewController.h; sourceTree = "<group>"; };
+		2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddPersonViewController.m; sourceTree = "<group>"; };
+		24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CRUD.h"; sourceTree = "<group>"; };
+		24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CRUD.m"; sourceTree = "<group>"; };
+		24C85B9B1AC36444009D064D /* WspPeopleViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspPeopleViewTableViewCell.h; sourceTree = "<group>"; };
+		24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleViewTableViewCell.m; sourceTree = "<group>"; };
+		24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WspPeopleViewTableViewCell.xib; sourceTree = "<group>"; };
+		24CEE9681AC05CCC00A95F26 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		24CEE9691AC05CCC00A95F26 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +102,12 @@
 			children = (
 				2415F80D1ABD5808004EF0CE /* AppDelegate.h */,
 				2415F80E1ABD5808004EF0CE /* AppDelegate.m */,
-				2415F8131ABD5808004EF0CE /* ViewController.h */,
-				2415F8141ABD5808004EF0CE /* ViewController.m */,
-				2415F8161ABD5808004EF0CE /* Main.storyboard */,
+				2415F8161ABD5808004EF0CE /* Wspollokator.storyboard */,
 				2415F8191ABD5808004EF0CE /* Images.xcassets */,
 				2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */,
-				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
+				24CEE96B1AC05CD700A95F26 /* WspCoreData */,
+				24C85B9A1AC363CB009D064D /* WspView */,
+				2415F8321ABED35A004EF0CE /* WspViewController */,
 				2415F8091ABD5808004EF0CE /* Supporting Files */,
 			);
 			path = Wspollokator;
@@ -120,6 +137,41 @@
 				2415F8271ABD5808004EF0CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2415F8321ABED35A004EF0CE /* WspViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2415F8331ABED6D4004EF0CE /* WspMainMenuViewController.h */,
+				2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */,
+				2415F8391ABEE56C004EF0CE /* WspPeopleTableViewController.h */,
+				2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */,
+				2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */,
+				2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */,
+			);
+			name = WspViewController;
+			sourceTree = "<group>";
+		};
+		24C85B9A1AC363CB009D064D /* WspView */ = {
+			isa = PBXGroup;
+			children = (
+				24C85B9B1AC36444009D064D /* WspPeopleViewTableViewCell.h */,
+				24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */,
+				24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */,
+			);
+			name = WspView;
+			sourceTree = "<group>";
+		};
+		24CEE96B1AC05CD700A95F26 /* WspCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
+				24CEE9681AC05CCC00A95F26 /* Person.h */,
+				24CEE9691AC05CCC00A95F26 /* Person.m */,
+				24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */,
+				24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */,
+			);
+			name = WspCoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2415F8181ABD5808004EF0CE /* Main.storyboard in Resources */,
+				24C85B9F1AC36444009D064D /* WspPeopleViewTableViewCell.xib in Resources */,
+				2415F8181ABD5808004EF0CE /* Wspollokator.storyboard in Resources */,
 				2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */,
 				2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */,
 			);
@@ -222,10 +275,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */,
 				2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */,
+				24CEE96A1AC05CCC00A95F26 /* Person.m in Sources */,
+				2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */,
 				2415F80C1ABD5808004EF0CE /* main.m in Sources */,
-				2415F8151ABD5808004EF0CE /* ViewController.m in Sources */,
+				24C85B9E1AC36444009D064D /* WspPeopleViewTableViewCell.m in Sources */,
 				2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */,
+				2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */,
+				24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +306,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2415F8161ABD5808004EF0CE /* Main.storyboard */ = {
+		2415F8161ABD5808004EF0CE /* Wspollokator.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2415F8171ABD5808004EF0CE /* Base */,
 			);
-			name = Main.storyboard;
+			name = Wspollokator.storyboard;
 			sourceTree = "<group>";
 		};
 		2415F81B1ABD5808004EF0CE /* LaunchScreen.xib */ = {
@@ -352,6 +410,7 @@
 				INFOPLIST_FILE = Wspollokator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +421,7 @@
 				INFOPLIST_FILE = Wspollokator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -418,6 +478,7 @@
 				2415F82E1ABD5808004EF0CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2415F82F1ABD5808004EF0CE /* Build configuration list for PBXNativeTarget "WspollokatorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +487,7 @@
 				2415F8311ABD5808004EF0CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
