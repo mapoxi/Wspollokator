@@ -11,7 +11,7 @@
 
 @implementation Person
 
-@dynamic personID;
+@synthesize personID;
 @dynamic personName;
 @dynamic personNick;
 

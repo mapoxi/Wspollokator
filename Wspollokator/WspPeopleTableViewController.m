@@ -8,18 +8,27 @@
 
 #import "WspPeopleTableViewController.h"
 #import "WspAddPersonViewController.h"
+#import "WspPeopleViewTableViewCell.h"
 #import "NSManagedObject+CRUD.h"
 #import "Person.h"
 
 @interface WspPeopleTableViewController ()
 
+@property WspPeopleViewTableViewCell *wspPeopleViewTableViewCell;
+@property (strong, nonatomic) NSArray *people;
+
 @end
 
 @implementation WspPeopleTableViewController
 
+- (void)viewDidAppear {
+    _people = [Person readAllObjects];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Osoby";
+    _wspPeopleViewTableViewCell = [[WspPeopleViewTableViewCell alloc] init];
 }
 
 - (IBAction)backButton:(id)sender {
@@ -42,20 +51,26 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    // Return the number of rows in the section.
-    return 0;
+    return [_people count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"peopleTableViewCell";
+    WspPeopleViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(!cell) {
+        [tableView registerNib: [UINib nibWithNibName:@"WspPeopleTableViewCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    }
     return cell;
+
 }
-*/
+- (void)tableView:(UITableView *)tableView willDisplayCell:(WspPeopleViewTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    Person *readPerson = _people[indexPath.row];
+    cell.nameLabel.text = readPerson.personName;
+    cell.nickLabel.text = readPerson.personNick;
+}
 
 /*
 // Override to support conditional editing of the table view.
