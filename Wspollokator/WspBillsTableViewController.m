@@ -68,7 +68,8 @@
     Bills *readBill = _bills[indexPath.row];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"dd.MM.YYYY";
-    cell.shopNameLabel.text = readBill.billTitle;
+    [cell.shopNameButton setTitle:readBill.billTitle forState: UIControlStateNormal];
+    //cell.shopNameButton.titleLabel.text = readBill.billTitle;
     cell.billDateLabel.text = [formatter stringFromDate:readBill.billDate];
 }
 
