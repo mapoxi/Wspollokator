@@ -1,42 +1,41 @@
 //
-//  WspPeopleTableViewController.m
+//  WspBillsTableViewController.m
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 22.03.2015.
+//  Created by Piotr Mlynarski on 28.03.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 
-#import "WspPeopleTableViewController.h"
-#import "WspPeopleTableViewCell.h"
+#import "WspBillsTableViewController.h"
+#import "WspBillsTableViewCell.h"
 #import "NSManagedObject+CRUD.h"
-#import "Person.h"
+#import "Bills.h"
 
-@interface WspPeopleTableViewController ()
 
-@property WspPeopleTableViewCell *wspPeopleViewTableViewCell;
-@property (strong, nonatomic) NSArray *people;
+@interface WspBillsTableViewController ()
+@property WspBillsTableViewCell *wspBillTableViewCell;
+@property (strong, nonatomic) NSArray *bills;
 
 @end
 
-@implementation WspPeopleTableViewController
+@implementation WspBillsTableViewController
 
 - (void)viewDidAppear:(BOOL)animated {
-    _people = [Person readAllObjects];
+    _bills = [Bills readAllObjects];
     [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _wspPeopleViewTableViewCell = [[WspPeopleTableViewCell alloc] init];
+    _wspBillTableViewCell = [[WspBillsTableViewCell alloc] init];
 }
 
 - (IBAction)backButton:(id)sender {
-     [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)addPerson:(id)sender {
+- (IBAction)addBill:(id)sender {
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -50,24 +49,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_people count];
+    return [_bills count];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    WspPeopleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    WspBillsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(!cell) {
-        [tableView registerNib: [UINib nibWithNibName:@"WspPeopleTableViewCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
+        [tableView registerNib: [UINib nibWithNibName:@"WspBillsTableViewCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
     return cell;
-
-}
-- (void)tableView:(UITableView *)tableView willDisplayCell:(WspPeopleTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    Person *readPerson = _people[indexPath.row];
-    cell.nameLabel.text = readPerson.personName;
-    cell.nickLabel.text = readPerson.personNick;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(WspBillsTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    Bills *readBill = _bills[indexPath.row];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"dd.MM.YYYY";
+    cell.shopNameLabel.text = readBill.billTitle;
+    cell.billDateLabel.text = [formatter stringFromDate:readBill.billDate];
 }
 
 /*

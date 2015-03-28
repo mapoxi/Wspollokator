@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Bills" representedClassName="Bills" syncable="YES">
+        <attribute name="billDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="billID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="billIsActive" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="billTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="personID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="personName" optional="YES" attributeType="String" syncable="YES"/>
@@ -7,5 +13,6 @@
     </entity>
     <elements>
         <element name="Person" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Bills" positionX="-63" positionY="9" width="128" height="105"/>
     </elements>
 </model>

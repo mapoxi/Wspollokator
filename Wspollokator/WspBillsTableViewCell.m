@@ -1,14 +1,14 @@
 //
-//  WspPeopleViewTableViewCell.m
+//  WspBillsTableViewCell.m
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 25.03.2015.
+//  Created by Piotr Mlynarski on 28.03.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 
-#import "WspPeopleViewTableViewCell.h"
+#import "WspBillsTableViewCell.h"
 
-@implementation WspPeopleViewTableViewCell
+@implementation WspBillsTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

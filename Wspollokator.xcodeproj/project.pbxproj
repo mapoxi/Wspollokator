@@ -18,8 +18,13 @@
 		2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */; };
 		2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */; };
 		24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */; };
-		24C85B9E1AC36444009D064D /* WspPeopleViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */; };
-		24C85B9F1AC36444009D064D /* WspPeopleViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */; };
+		24C85B9E1AC36444009D064D /* WspPeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B9C1AC36444009D064D /* WspPeopleTableViewCell.m */; };
+		24C85B9F1AC36444009D064D /* WspPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C85B9D1AC36444009D064D /* WspPeopleTableViewCell.xib */; };
+		24C85BA71AC68008009D064D /* WspBillsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BA61AC68008009D064D /* WspBillsTableViewController.m */; };
+		24C85BAA1AC68BB1009D064D /* Bills.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BA91AC68BB1009D064D /* Bills.m */; };
+		24C85BAD1AC68EEA009D064D /* WspAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BAC1AC68EEA009D064D /* WspAddBillViewController.m */; };
+		24C85BB61AC69A1C009D064D /* WspBillsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BB41AC69A1C009D064D /* WspBillsTableViewCell.m */; };
+		24C85BB71AC69A1C009D064D /* WspBillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C85BB51AC69A1C009D064D /* WspBillsTableViewCell.xib */; };
 		24CEE96A1AC05CCC00A95F26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CEE9691AC05CCC00A95F26 /* Person.m */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +59,18 @@
 		2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddPersonViewController.m; sourceTree = "<group>"; };
 		24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CRUD.h"; sourceTree = "<group>"; };
 		24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CRUD.m"; sourceTree = "<group>"; };
-		24C85B9B1AC36444009D064D /* WspPeopleViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspPeopleViewTableViewCell.h; sourceTree = "<group>"; };
-		24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleViewTableViewCell.m; sourceTree = "<group>"; };
-		24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WspPeopleViewTableViewCell.xib; sourceTree = "<group>"; };
+		24C85B9B1AC36444009D064D /* WspPeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspPeopleTableViewCell.h; sourceTree = "<group>"; };
+		24C85B9C1AC36444009D064D /* WspPeopleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleTableViewCell.m; sourceTree = "<group>"; };
+		24C85B9D1AC36444009D064D /* WspPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WspPeopleTableViewCell.xib; sourceTree = "<group>"; };
+		24C85BA51AC68008009D064D /* WspBillsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspBillsTableViewController.h; sourceTree = "<group>"; };
+		24C85BA61AC68008009D064D /* WspBillsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspBillsTableViewController.m; sourceTree = "<group>"; };
+		24C85BA81AC68BB1009D064D /* Bills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bills.h; sourceTree = "<group>"; };
+		24C85BA91AC68BB1009D064D /* Bills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bills.m; sourceTree = "<group>"; };
+		24C85BAB1AC68EEA009D064D /* WspAddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddBillViewController.h; sourceTree = "<group>"; };
+		24C85BAC1AC68EEA009D064D /* WspAddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddBillViewController.m; sourceTree = "<group>"; };
+		24C85BB31AC69A1C009D064D /* WspBillsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspBillsTableViewCell.h; sourceTree = "<group>"; };
+		24C85BB41AC69A1C009D064D /* WspBillsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspBillsTableViewCell.m; sourceTree = "<group>"; };
+		24C85BB51AC69A1C009D064D /* WspBillsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WspBillsTableViewCell.xib; sourceTree = "<group>"; };
 		24CEE9681AC05CCC00A95F26 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		24CEE9691AC05CCC00A95F26 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,12 +156,16 @@
 		2415F8321ABED35A004EF0CE /* WspViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2415F8331ABED6D4004EF0CE /* WspMainMenuViewController.h */,
-				2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */,
-				2415F8391ABEE56C004EF0CE /* WspPeopleTableViewController.h */,
-				2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */,
+				24C85BAB1AC68EEA009D064D /* WspAddBillViewController.h */,
+				24C85BAC1AC68EEA009D064D /* WspAddBillViewController.m */,
 				2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */,
 				2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */,
+				24C85BA51AC68008009D064D /* WspBillsTableViewController.h */,
+				24C85BA61AC68008009D064D /* WspBillsTableViewController.m */,
+				2415F8391ABEE56C004EF0CE /* WspPeopleTableViewController.h */,
+				2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */,
+				2415F8331ABED6D4004EF0CE /* WspMainMenuViewController.h */,
+				2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */,
 			);
 			name = WspViewController;
 			sourceTree = "<group>";
@@ -155,9 +173,12 @@
 		24C85B9A1AC363CB009D064D /* WspView */ = {
 			isa = PBXGroup;
 			children = (
-				24C85B9B1AC36444009D064D /* WspPeopleViewTableViewCell.h */,
-				24C85B9C1AC36444009D064D /* WspPeopleViewTableViewCell.m */,
-				24C85B9D1AC36444009D064D /* WspPeopleViewTableViewCell.xib */,
+				24C85BB31AC69A1C009D064D /* WspBillsTableViewCell.h */,
+				24C85BB41AC69A1C009D064D /* WspBillsTableViewCell.m */,
+				24C85BB51AC69A1C009D064D /* WspBillsTableViewCell.xib */,
+				24C85B9B1AC36444009D064D /* WspPeopleTableViewCell.h */,
+				24C85B9C1AC36444009D064D /* WspPeopleTableViewCell.m */,
+				24C85B9D1AC36444009D064D /* WspPeopleTableViewCell.xib */,
 			);
 			name = WspView;
 			sourceTree = "<group>";
@@ -165,11 +186,13 @@
 		24CEE96B1AC05CD700A95F26 /* WspCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
-				24CEE9681AC05CCC00A95F26 /* Person.h */,
-				24CEE9691AC05CCC00A95F26 /* Person.m */,
+				24C85BA81AC68BB1009D064D /* Bills.h */,
+				24C85BA91AC68BB1009D064D /* Bills.m */,
 				24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */,
 				24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */,
+				24CEE9681AC05CCC00A95F26 /* Person.h */,
+				24CEE9691AC05CCC00A95F26 /* Person.m */,
+				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
 			);
 			name = WspCoreData;
 			sourceTree = "<group>";
@@ -254,7 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C85B9F1AC36444009D064D /* WspPeopleViewTableViewCell.xib in Resources */,
+				24C85BB71AC69A1C009D064D /* WspBillsTableViewCell.xib in Resources */,
+				24C85B9F1AC36444009D064D /* WspPeopleTableViewCell.xib in Resources */,
 				2415F8181ABD5808004EF0CE /* Wspollokator.storyboard in Resources */,
 				2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */,
 				2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */,
@@ -279,8 +303,12 @@
 				2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */,
 				24CEE96A1AC05CCC00A95F26 /* Person.m in Sources */,
 				2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */,
+				24C85BAA1AC68BB1009D064D /* Bills.m in Sources */,
 				2415F80C1ABD5808004EF0CE /* main.m in Sources */,
-				24C85B9E1AC36444009D064D /* WspPeopleViewTableViewCell.m in Sources */,
+				24C85BB61AC69A1C009D064D /* WspBillsTableViewCell.m in Sources */,
+				24C85BAD1AC68EEA009D064D /* WspAddBillViewController.m in Sources */,
+				24C85BA71AC68008009D064D /* WspBillsTableViewController.m in Sources */,
+				24C85B9E1AC36444009D064D /* WspPeopleTableViewCell.m in Sources */,
 				2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */,
 				2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */,
 				24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */,

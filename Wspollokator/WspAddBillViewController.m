@@ -1,23 +1,24 @@
 //
-//  WspAddPersonViewController.m
+//  WspAddBillViewController.m
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 23.03.2015.
+//  Created by Piotr Mlynarski on 28.03.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 
-#import "WspAddPersonViewController.h"
+#import "WspAddBillViewController.h"
 #import "NSManagedObject+CRUD.h"
-#import "Person.h"
+#import "Bills.h"
 
-@interface WspAddPersonViewController ()
+@interface WspAddBillViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *addNameTextBox;
-@property (weak, nonatomic) IBOutlet UITextField *addNickTextBox;
+@property (strong, nonatomic) IBOutlet UITextField *addShopNameTextBox;
+
+@property (strong, nonatomic) IBOutlet UIDatePicker *addBillDatePicker;
 
 @end
 
-@implementation WspAddPersonViewController
+@implementation WspAddBillViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,19 +30,18 @@
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
-- (IBAction)addPersonButton:(id)sender {
-    NSArray *howManyCount = [Person readAllObjects];
-    Person *lastPerson = [howManyCount lastObject];
-    Person *addNewPerson = [Person createObject];
-    addNewPerson.personName = _addNameTextBox.text;
-    addNewPerson.personNick = _addNickTextBox.text;
-    addNewPerson.personID = lastPerson.personID + 1;
-    [Person saveDatabase];
+- (IBAction)addBillButton:(id)sender {
+    NSArray *howManyCount = [Bills readAllObjects];
+    Bills *lastBill = [howManyCount lastObject];
+    Bills *addNewBill = [Bills createObject];
+    addNewBill.billTitle = _addShopNameTextBox.text;
+    addNewBill.billDate = _addBillDatePicker.date;
+    addNewBill.billIsActive = 1;
+    addNewBill.billID = lastBill.billID + 1;
+    [Bills saveDatabase];
     [self.navigationController popViewControllerAnimated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    
 }
-
 
 
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WspPeopleViewTableViewCell : UITableViewCell
+@interface WspPeopleTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *nickLabel;
