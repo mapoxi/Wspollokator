@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Bills.h"
 
 @interface WspBillTableViewController : UITableViewController
+
+@property (nonatomic, strong) Bills *actualBill;
 
 @end

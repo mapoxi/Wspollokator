@@ -70,13 +70,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Bills Identifier" id="C9g-nI-Qch">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Bills Identifier" id="C9g-nI-Qch">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9g-nI-Qch" id="Hzu-eG-vmU">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="16l-pe-tIh" kind="show" identifier="billsSegue" id="GHm-xK-ThO"/>
+                                    <segue destination="16l-pe-tIh" kind="show" identifier="showBillSegue" id="GHm-xK-ThO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -137,6 +137,7 @@
                             <outlet property="delegate" destination="16l-pe-tIh" id="k7g-oG-FzR"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="vV5-lw-h7t"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5F-Xk-Uo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
