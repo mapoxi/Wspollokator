@@ -10,4 +10,6 @@
 
 @interface WspBillTableViewController : UITableViewController
 
+- (id)initWithBillId:(int)billId;
+
 @end

@@ -76,7 +76,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    _wspBillTableViewController = [[WspBillTableViewController alloc] init];
+    Bills *readBill = _bills[indexPath.row];
+    _wspBillTableViewController = [[WspBillTableViewController alloc] initWithBillId:readBill.billID];
     
     [self.navigationController pushViewController:_wspBillTableViewController animated:YES];
     

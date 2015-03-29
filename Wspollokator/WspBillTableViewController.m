@@ -10,9 +10,20 @@
 
 @interface WspBillTableViewController ()
 
+@property int billId;
+
 @end
 
 @implementation WspBillTableViewController
+
+- (id)initWithBillId:(int)billId {
+    self = [super init];
+    if(self) {
+        NSLog(@"_init: %@", self);
+        _billId = billId;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
