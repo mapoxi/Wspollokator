@@ -12,7 +12,7 @@
 @implementation Bills
 
 @synthesize billID;
-@dynamic billTitle;
+@dynamic billName;
 @dynamic billDate;
 @synthesize billIsActive;
 

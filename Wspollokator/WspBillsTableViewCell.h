@@ -10,8 +10,8 @@
 
 @interface WspBillsTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *billNameLabel;
 
-@property (strong, nonatomic) IBOutlet UIButton *shopNameButton;
 @property (strong, nonatomic) IBOutlet UILabel *billDateLabel;
 
 @end

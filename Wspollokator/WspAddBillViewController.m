@@ -34,7 +34,7 @@
     NSArray *howManyCount = [Bills readAllObjects];
     Bills *lastBill = [howManyCount lastObject];
     Bills *addNewBill = [Bills createObject];
-    addNewBill.billTitle = _addShopNameTextBox.text;
+    addNewBill.billName = _addShopNameTextBox.text;
     addNewBill.billDate = _addBillDatePicker.date;
     addNewBill.billIsActive = 1;
     addNewBill.billID = lastBill.billID + 1;

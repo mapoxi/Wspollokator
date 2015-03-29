@@ -13,7 +13,7 @@
 @interface Bills : NSManagedObject
 
 @property (nonatomic) int billID;
-@property (nonatomic, retain) NSString * billTitle;
+@property (nonatomic, retain) NSString * billName;
 @property (nonatomic, retain) NSDate * billDate;
 @property (nonatomic) int billIsActive;
 
