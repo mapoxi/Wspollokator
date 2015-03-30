@@ -2,7 +2,7 @@
 //  Person.m
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 23.03.2015.
+//  Created by Piotr Mlynarski on 30.03.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 

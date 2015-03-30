@@ -2,7 +2,7 @@
 //  Bills.m
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 28.03.2015.
+//  Created by Piotr Mlynarski on 30.03.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 
@@ -11,9 +11,9 @@
 
 @implementation Bills
 
-@synthesize billID;
-@dynamic billName;
 @dynamic billDate;
+@synthesize billID;
 @synthesize billIsActive;
+@dynamic billName;
 
 @end

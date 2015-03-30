@@ -74,22 +74,13 @@
     cell.billDateLabel.text = [formatter stringFromDate:readBill.billDate];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"showBillSegue"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        _wspBillTableViewController = segue.destinationViewController;
-        _wspBillTableViewController.actualBill = [_bills objectAtIndex:indexPath.row];
-    }
-}
-
-
-/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     _wspBillTableViewController = [[WspBillTableViewController alloc] init];
-    
+    _wspBillTableViewController.actualBill = [_bills objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:_wspBillTableViewController animated:YES];
     
-}*/
+}
 
 /*
 // Override to support conditional editing of the table view.

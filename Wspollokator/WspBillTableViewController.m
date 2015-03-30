@@ -14,8 +14,17 @@
 
 @implementation WspBillTableViewController
 
+- (IBAction)backButton:(id)sender {
+}
+
+- (IBAction)addProductButton:(id)sender {
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = _actualBill.billName;
+    //[self.navigationController setNavigationBarHidden:YES animated:YES];
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -33,7 +42,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
