@@ -82,24 +82,23 @@
 }
 
 - (IBAction)clickSwitch: (UISwitch *) aSwitch {
-    /*NSNumber *prodID = [NSNumber numberWithLong:((aSwitch.tag - (aSwitch.tag%10))/10)];
+    NSNumber *prodID = [NSNumber numberWithLong:((aSwitch.tag - (aSwitch.tag%10))/10)];
     Product  *record = [Product readObjectWithParamterName:@"productID" andValue:prodID];
     PersonWithProduct *editPWPID = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong: aSwitch.tag]];
     
     if(aSwitch.isOn) {
-        record.numberOfPerson = record.numberOfPerson + 1;
-        editPWPID.positionIsOn = 1;
+        record.numberOfPerson = record.numberOfPerson + 1;;
+        editPWPID.positionIsOn = [NSNumber numberWithInt: 1];
     }
     else {
         record.numberOfPerson = record.numberOfPerson - 1;
-        editPWPID.positionIsOn = 0;
+        editPWPID.positionIsOn = [NSNumber numberWithInt: 0];
     }
     [Product saveDatabase];
-    [PersonWithProduct saveDatabase];*/
+    [PersonWithProduct saveDatabase];
 }
 
 - (void)addBlinkPosition: (int)aSwitchTag {
-    NSLog(@"1 -> %d", aSwitchTag);
     PersonWithProduct *addNewPosition = [PersonWithProduct createObject];
     
     addNewPosition.pWPID = [NSNumber numberWithInt: aSwitchTag];
@@ -107,14 +106,7 @@
     addNewPosition.productID = [NSNumber numberWithInt: ((aSwitchTag - (aSwitchTag%10))/10)];
     addNewPosition.positionIsOn = [NSNumber numberWithInt: 0];
     
-    NSLog(@"2 -> PWP %@ %@ %@ %@", addNewPosition.pWPID, addNewPosition.personID, addNewPosition.productID, addNewPosition.positionIsOn);
-    
     [PersonWithProduct saveDatabase];
-    
-    NSArray *ABPArray = [PersonWithProduct readAllObjects];
-    PersonWithProduct *ABP = [ABPArray lastObject];
-    NSLog(@"3 -> PWP %@ %@ %@ %@", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
-
 }
 
 

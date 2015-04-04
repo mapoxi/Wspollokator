@@ -80,10 +80,6 @@
     cell.numberOfProductLabel.text = [NSString stringWithFormat: @"%d", writeProduct.numberOfProduct];
     cell.priceLabel.text = [NSString stringWithFormat: @"%f", writeProduct.productPrice];
     
-    
-    
-    
-    //Na to zwrócić uwagę
     if (!cell.switch1.tag) {
         cell.switch1.tag = (writeProduct.productID*10) + 1;
         cell.switch2.tag = (writeProduct.productID*10) + 2;
@@ -92,33 +88,30 @@
         cell.switch5.tag = (writeProduct.productID*10) + 5;
         cell.switch6.tag = (writeProduct.productID*10) + 6;
         
-        
-        //2............
-        /*PersonWithProduct *lookSwitch1 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch1.tag]];
-        if (lookSwitch1.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch1 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch1.tag]];
+        if ([lookSwitch1.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch1.on = YES;
         }
-        PersonWithProduct *lookSwitch2 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch2.tag]];
-        if (lookSwitch2.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch2 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch2.tag]];
+        if ([lookSwitch2.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch2.on = YES;
         }
-        PersonWithProduct *lookSwitch3 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch3.tag]];
-        if (lookSwitch3.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch3 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch3.tag]];
+        if ([lookSwitch3.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch3.on = YES;
         }
-        PersonWithProduct *lookSwitch4 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch4.tag]];
-        if (lookSwitch4.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch4 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch4.tag]];
+        if ([lookSwitch4.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch4.on = YES;
         }
-        PersonWithProduct *lookSwitch5 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch5.tag]];
-        if (lookSwitch5.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch5 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch5.tag]];
+        if ([lookSwitch5.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch5.on = YES;
         }
-        PersonWithProduct *lookSwitch6 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong:cell.switch6.tag]];
-        if (lookSwitch6.positionIsOn == 1) {
+        PersonWithProduct *lookSwitch6 = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithInteger:cell.switch6.tag]];
+        if ([lookSwitch6.positionIsOn isEqual: [NSNumber numberWithInt: 1]]) {
             cell.switch6.on = YES;
         }
-        */
     }
 }
 
