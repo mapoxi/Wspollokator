@@ -82,7 +82,7 @@
     if ([segue.identifier isEqualToString:@"showBillSegue"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         _wspBillTableViewController = [[WspBillTableViewController alloc] init];
-        _wspBillTableViewController.actualBill = [_bills objectAtIndex:indexPath.row];
+        _wspBillTableViewController.currentBill = [_bills objectAtIndex:indexPath.row];
     }
 }
 

@@ -16,6 +16,6 @@
 @dynamic productName;
 @synthesize numberOfProduct;
 @synthesize numberOfPerson;
-@synthesize numberOfBill;
+@dynamic numberOfBill;
 
 @end

@@ -17,6 +17,6 @@
 @property (nonatomic, retain) NSString * productName;
 @property (nonatomic) int numberOfProduct;
 @property (nonatomic) int numberOfPerson;
-@property (nonatomic) int numberOfBill;
+@property (nonatomic) NSNumber *numberOfBill;
 
 @end

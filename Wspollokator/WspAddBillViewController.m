@@ -36,8 +36,8 @@
     Bills *addNewBill = [Bills createObject];
     addNewBill.billName = _addShopNameTextBox.text;
     addNewBill.billDate = _addBillDatePicker.date;
-    addNewBill.billIsActive = 1;
-    addNewBill.billID = lastBill.billID + 1;
+    addNewBill.billIsActive = [NSNumber numberWithInt: 1];
+    addNewBill.billID = [NSNumber numberWithInt:([lastBill.billID intValue] + 1)];
     [Bills saveDatabase];
     [self.navigationController popViewControllerAnimated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];

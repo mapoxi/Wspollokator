@@ -25,12 +25,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = _actualBill.billName;
+    self.navigationItem.title = _currentBill.billName;
     _wspBillTableViewCell = [[WspBillTableViewCell alloc] init];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    //_product = [Product readObjectWithParamterName:@"numberOfBill" andValue:[NSNumber numberWithInt: _actualBill.billID]];
     _product = [Product readAllObjects];
+    NSLog(@"Bill Name %@", self.currentBill.billName);
     [self.tableView reloadData];
 }
 
@@ -118,7 +120,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"addProductSegue"]) {
         _wspAddProductViewController = [[WspAddProductViewController alloc] init];
-        _wspAddProductViewController.actualBill = _actualBill;
+        _wspAddProductViewController.actualBill = _currentBill;
     }
 }
 

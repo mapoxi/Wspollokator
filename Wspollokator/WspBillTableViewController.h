@@ -11,6 +11,6 @@
 
 @interface WspBillTableViewController : UITableViewController
 
-@property (nonatomic, strong) Bills *actualBill;
+@property (nonatomic, strong) Bills *currentBill;
 
 @end

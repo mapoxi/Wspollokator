@@ -43,6 +43,7 @@
     addNewProduct.productPrice = [_productPriceTextBox.text floatValue];
     addNewProduct.productID = lastProductID.productID + 1;
     addNewProduct.numberOfPerson = 0;
+    addNewProduct.numberOfBill = _actualBill.billID;
     [Product saveDatabase];
 
     
