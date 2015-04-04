@@ -31,7 +31,7 @@
 		24C85BD01AC95E15009D064D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BCF1AC95E15009D064D /* Person.m */; };
 		24C85BD31AC95E15009D064D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BD21AC95E15009D064D /* Product.m */; };
 		24C85BD91AC95E16009D064D /* Bills.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85BD81AC95E16009D064D /* Bills.m */; };
-		24CDFDF11AD049A600114E0C /* PersonWithProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CDFDF01AD049A600114E0C /* PersonWithProduct.m */; };
+		24DA5B531AD050B8009F674D /* PersonWithProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5B521AD050B8009F674D /* PersonWithProduct.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,8 @@
 		24C85BD21AC95E15009D064D /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = ../Product.m; sourceTree = "<group>"; };
 		24C85BD71AC95E16009D064D /* Bills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bills.h; path = ../Bills.h; sourceTree = "<group>"; };
 		24C85BD81AC95E16009D064D /* Bills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bills.m; path = ../Bills.m; sourceTree = "<group>"; };
-		24CDFDEF1AD049A600114E0C /* PersonWithProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonWithProduct.h; path = ../PersonWithProduct.h; sourceTree = "<group>"; };
-		24CDFDF01AD049A600114E0C /* PersonWithProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonWithProduct.m; path = ../PersonWithProduct.m; sourceTree = "<group>"; };
+		24DA5B511AD050B8009F674D /* PersonWithProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWithProduct.h; sourceTree = "<group>"; };
+		24DA5B521AD050B8009F674D /* PersonWithProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWithProduct.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,12 +214,12 @@
 				24C85BD81AC95E16009D064D /* Bills.m */,
 				24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */,
 				24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */,
-				24CDFDEF1AD049A600114E0C /* PersonWithProduct.h */,
-				24CDFDF01AD049A600114E0C /* PersonWithProduct.m */,
-				24C85BD11AC95E15009D064D /* Product.h */,
-				24C85BD21AC95E15009D064D /* Product.m */,
 				24C85BCE1AC95E15009D064D /* Person.h */,
 				24C85BCF1AC95E15009D064D /* Person.m */,
+				24DA5B511AD050B8009F674D /* PersonWithProduct.h */,
+				24DA5B521AD050B8009F674D /* PersonWithProduct.m */,
+				24C85BD11AC95E15009D064D /* Product.h */,
+				24C85BD21AC95E15009D064D /* Product.m */,
 				2415F8101ABD5808004EF0CE /* Wspollokator.xcdatamodeld */,
 			);
 			name = WspCoreData;
@@ -332,7 +332,7 @@
 				24C85BCA1AC822A2009D064D /* WspBillTableViewController.m in Sources */,
 				244D2A4E1ACEF2BB00395733 /* WspAddProductViewController.m in Sources */,
 				2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */,
-				24CDFDF11AD049A600114E0C /* PersonWithProduct.m in Sources */,
+				24DA5B531AD050B8009F674D /* PersonWithProduct.m in Sources */,
 				2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */,
 				24C85BD31AC95E15009D064D /* Product.m in Sources */,
 				2415F80C1ABD5808004EF0CE /* main.m in Sources */,

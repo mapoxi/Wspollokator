@@ -11,10 +11,10 @@
 
 @implementation PersonWithProduct
 
-@synthesize billID;
-@synthesize personID;
-@synthesize positionIsOn;
-@synthesize productID;
-@synthesize pWPID;
+@dynamic billID;
+@dynamic personID;
+@dynamic positionIsOn;
+@dynamic productID;
+@dynamic pWPID;
 
 @end

@@ -28,8 +28,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     NSArray *ABPArray = [PersonWithProduct readAllObjects];
-    PersonWithProduct *ABP = [ABPArray lastObject];
-    NSLog(@"4. Main      %d %d %d %d", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
+    PersonWithProduct *ABP = ABPArray[0];
+    NSLog(@"4. Main      %@ %@ %@ %@", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
 
 }
 

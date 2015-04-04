@@ -102,18 +102,18 @@
     NSLog(@"1 -> %d", aSwitchTag);
     PersonWithProduct *addNewPosition = [PersonWithProduct createObject];
     
-    addNewPosition.pWPID = aSwitchTag;
-    addNewPosition.personID = aSwitchTag%10;
-    addNewPosition.productID = (aSwitchTag - (aSwitchTag%10))/10;
-    addNewPosition.positionIsOn = 0;
+    addNewPosition.pWPID = [NSNumber numberWithInt: aSwitchTag];
+    addNewPosition.personID = [NSNumber numberWithInt: (aSwitchTag%10)];
+    addNewPosition.productID = [NSNumber numberWithInt: ((aSwitchTag - (aSwitchTag%10))/10)];
+    addNewPosition.positionIsOn = [NSNumber numberWithInt: 0];
     
-    NSLog(@"2 -> PWP %d %d %d %d", addNewPosition.pWPID, addNewPosition.personID, addNewPosition.productID, addNewPosition.positionIsOn);
+    NSLog(@"2 -> PWP %@ %@ %@ %@", addNewPosition.pWPID, addNewPosition.personID, addNewPosition.productID, addNewPosition.positionIsOn);
     
     [PersonWithProduct saveDatabase];
     
     NSArray *ABPArray = [PersonWithProduct readAllObjects];
     PersonWithProduct *ABP = [ABPArray lastObject];
-    NSLog(@"3 -> PWP %d %d %d %d", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
+    NSLog(@"3 -> PWP %@ %@ %@ %@", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
 
 }
 
