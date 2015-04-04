@@ -2,7 +2,7 @@
 //  PersonWithProduct.h
 //  Wspollokator
 //
-//  Created by Piotr Mlynarski on 30.03.2015.
+//  Created by Piotr Mlynarski on 04.04.2015.
 //  Copyright (c) 2015 ADM-IT. All rights reserved.
 //
 
@@ -13,9 +13,9 @@
 @interface PersonWithProduct : NSManagedObject
 
 @property (nonatomic) int billID;
+@property (nonatomic) int personID;
 @property (nonatomic) int positionIsOn;
 @property (nonatomic) int productID;
-@property (nonatomic) int personID;
 @property (nonatomic) int pWPID;
 
 @end

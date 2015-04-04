@@ -8,8 +8,8 @@
 
 #import "WspMainMenuViewController.h"
 #import "WspPeopleTableViewController.h"
-#import "PersonWithProduct.h"
 #import "NSManagedObject+CRUD.h"
+#import "PersonWithProduct.h"
 
 @interface WspMainMenuViewController ()
 
@@ -24,9 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSArray *test = [PersonWithProduct readAllObjects];
-    PersonWithProduct *kokos = [test lastObject];
-    NSLog(@"%d %d", kokos.personID, kokos.productID);
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSArray *ABPArray = [PersonWithProduct readAllObjects];
+    PersonWithProduct *ABP = [ABPArray lastObject];
+    NSLog(@"4. Main      %d %d %d %d", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -82,7 +82,7 @@
 }
 
 - (IBAction)clickSwitch: (UISwitch *) aSwitch {
-    NSNumber *prodID = [NSNumber numberWithLong:((aSwitch.tag - (aSwitch.tag%10))/10)];
+    /*NSNumber *prodID = [NSNumber numberWithLong:((aSwitch.tag - (aSwitch.tag%10))/10)];
     Product  *record = [Product readObjectWithParamterName:@"productID" andValue:prodID];
     PersonWithProduct *editPWPID = [PersonWithProduct readObjectWithParamterName:@"pWPID" andValue:[NSNumber numberWithLong: aSwitch.tag]];
     
@@ -95,25 +95,26 @@
         editPWPID.positionIsOn = 0;
     }
     [Product saveDatabase];
-    [PersonWithProduct saveDatabase];
+    [PersonWithProduct saveDatabase];*/
 }
 
 - (void)addBlinkPosition: (int)aSwitchTag {
-    NSArray *howManyCount = [PersonWithProduct readAllObjects];
-    PersonWithProduct *lastID = [howManyCount lastObject];
+    NSLog(@"1 -> %d", aSwitchTag);
+    PersonWithProduct *addNewPosition = [PersonWithProduct createObject];
     
-    int jeden = (aSwitchTag - (aSwitchTag%10))/10;
-    int dwa = lastID.productID;
-    int trzy = lastID.personID;
+    addNewPosition.pWPID = aSwitchTag;
+    addNewPosition.personID = aSwitchTag%10;
+    addNewPosition.productID = (aSwitchTag - (aSwitchTag%10))/10;
+    addNewPosition.positionIsOn = 0;
     
-    if ((jeden > dwa) || ((jeden == dwa) && (trzy < 6))) {
-        PersonWithProduct *addNewPosition = [PersonWithProduct createObject];
-        addNewPosition.pWPID = aSwitchTag;
-        addNewPosition.productID = (aSwitchTag - (aSwitchTag%10))/10;
-        addNewPosition.personID = aSwitchTag%10;
-        addNewPosition.positionIsOn = 0;
-        [PersonWithProduct saveDatabase];
-    }
+    NSLog(@"2 -> PWP %d %d %d %d", addNewPosition.pWPID, addNewPosition.personID, addNewPosition.productID, addNewPosition.positionIsOn);
+    
+    [PersonWithProduct saveDatabase];
+    
+    NSArray *ABPArray = [PersonWithProduct readAllObjects];
+    PersonWithProduct *ABP = [ABPArray lastObject];
+    NSLog(@"3 -> PWP %d %d %d %d", ABP.pWPID, ABP.personID, ABP.productID, ABP.positionIsOn);
+
 }
 
 

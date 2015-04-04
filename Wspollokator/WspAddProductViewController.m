@@ -7,22 +7,23 @@
 //
 
 #import "WspAddProductViewController.h"
+#import "WspBillTableViewCell.h"
 #import "NSManagedObject+CRUD.h"
 #import "Product.h"
+#import "PersonWithProduct.h"
 
 @interface WspAddProductViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *productNameTextBox;
-
 @property (strong, nonatomic) IBOutlet UITextField *numberOfProductTextBox;
-
 @property (strong, nonatomic) IBOutlet UITextField *productPriceTextBox;
-
+@property WspBillTableViewCell *wspBillTableViewCell;
 @end
 
 @implementation WspAddProductViewController
 
 - (void)viewDidLoad {
+    _wspBillTableViewCell = [[WspBillTableViewCell alloc] init];
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
@@ -43,6 +44,16 @@
     addNewProduct.productID = lastProductID.productID + 1;
     addNewProduct.numberOfPerson = 0;
     [Product saveDatabase];
+
+    
+    //1..............
+    
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+1)];
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+2)];
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+3)];
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+4)];
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+5)];
+    [_wspBillTableViewCell addBlinkPosition:(addNewProduct.productID*10+6)];
     
     [self.navigationController popViewControllerAnimated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
@@ -53,15 +64,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
