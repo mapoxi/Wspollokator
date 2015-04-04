@@ -17,6 +17,9 @@
 		2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */; };
 		2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */; };
 		2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */; };
+		244D2A4E1ACEF2BB00395733 /* WspAddProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D2A4D1ACEF2BB00395733 /* WspAddProductViewController.m */; };
+		244D2A521ACEFCB800395733 /* WspBillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D2A501ACEFCB800395733 /* WspBillTableViewCell.m */; };
+		244D2A531ACEFCB800395733 /* WspBillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244D2A511ACEFCB800395733 /* WspBillTableViewCell.xib */; };
 		24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */; };
 		24C85B9E1AC36444009D064D /* WspPeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C85B9C1AC36444009D064D /* WspPeopleTableViewCell.m */; };
 		24C85B9F1AC36444009D064D /* WspPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C85B9D1AC36444009D064D /* WspPeopleTableViewCell.xib */; };
@@ -60,6 +63,11 @@
 		2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleTableViewController.m; sourceTree = "<group>"; };
 		2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddPersonViewController.h; sourceTree = "<group>"; };
 		2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddPersonViewController.m; sourceTree = "<group>"; };
+		244D2A4C1ACEF2BB00395733 /* WspAddProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddProductViewController.h; sourceTree = "<group>"; };
+		244D2A4D1ACEF2BB00395733 /* WspAddProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddProductViewController.m; sourceTree = "<group>"; };
+		244D2A4F1ACEFCB800395733 /* WspBillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspBillTableViewCell.h; sourceTree = "<group>"; };
+		244D2A501ACEFCB800395733 /* WspBillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspBillTableViewCell.m; sourceTree = "<group>"; };
+		244D2A511ACEFCB800395733 /* WspBillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WspBillTableViewCell.xib; sourceTree = "<group>"; };
 		24C85B971AC35E72009D064D /* NSManagedObject+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CRUD.h"; sourceTree = "<group>"; };
 		24C85B981AC35E72009D064D /* NSManagedObject+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CRUD.m"; sourceTree = "<group>"; };
 		24C85B9B1AC36444009D064D /* WspPeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspPeopleTableViewCell.h; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 				24C85BAC1AC68EEA009D064D /* WspAddBillViewController.m */,
 				2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */,
 				2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */,
+				244D2A4C1ACEF2BB00395733 /* WspAddProductViewController.h */,
+				244D2A4D1ACEF2BB00395733 /* WspAddProductViewController.m */,
 				24C85BC81AC822A2009D064D /* WspBillTableViewController.h */,
 				24C85BC91AC822A2009D064D /* WspBillTableViewController.m */,
 				24C85BA51AC68008009D064D /* WspBillsTableViewController.h */,
@@ -184,6 +194,9 @@
 		24C85B9A1AC363CB009D064D /* WspView */ = {
 			isa = PBXGroup;
 			children = (
+				244D2A4F1ACEFCB800395733 /* WspBillTableViewCell.h */,
+				244D2A501ACEFCB800395733 /* WspBillTableViewCell.m */,
+				244D2A511ACEFCB800395733 /* WspBillTableViewCell.xib */,
 				24C85BB31AC69A1C009D064D /* WspBillsTableViewCell.h */,
 				24C85BB41AC69A1C009D064D /* WspBillsTableViewCell.m */,
 				24C85BB51AC69A1C009D064D /* WspBillsTableViewCell.xib */,
@@ -295,6 +308,7 @@
 				24C85BB71AC69A1C009D064D /* WspBillsTableViewCell.xib in Resources */,
 				24C85B9F1AC36444009D064D /* WspPeopleTableViewCell.xib in Resources */,
 				2415F8181ABD5808004EF0CE /* Wspollokator.storyboard in Resources */,
+				244D2A531ACEFCB800395733 /* WspBillTableViewCell.xib in Resources */,
 				2415F81D1ABD5808004EF0CE /* LaunchScreen.xib in Resources */,
 				2415F81A1ABD5808004EF0CE /* Images.xcassets in Resources */,
 			);
@@ -316,6 +330,7 @@
 			files = (
 				2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */,
 				24C85BCA1AC822A2009D064D /* WspBillTableViewController.m in Sources */,
+				244D2A4E1ACEF2BB00395733 /* WspAddProductViewController.m in Sources */,
 				2415F80F1ABD5808004EF0CE /* AppDelegate.m in Sources */,
 				24C85BD61AC95E15009D064D /* PersonWithProduct.m in Sources */,
 				2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */,
@@ -328,6 +343,7 @@
 				24C85BD91AC95E16009D064D /* Bills.m in Sources */,
 				24C85B9E1AC36444009D064D /* WspPeopleTableViewCell.m in Sources */,
 				2415F8121ABD5808004EF0CE /* Wspollokator.xcdatamodeld in Sources */,
+				244D2A521ACEFCB800395733 /* WspBillTableViewCell.m in Sources */,
 				2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */,
 				24C85B991AC35E72009D064D /* NSManagedObject+CRUD.m in Sources */,
 			);
