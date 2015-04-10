@@ -30,9 +30,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    //_product = [Product readObjectWithParamterName:@"numberOfBill" andValue:[NSNumber numberWithInt: _actualBill.billID]];
-    _product = [Product readAllObjects];
-    NSLog(@"Bill Name %@", self.currentBill.billName);
+    _product = [Product readObjectsWithParamterName:@"numberOfBill" andValue:_currentBill.billID];
     [self.tableView reloadData];
 }
 
@@ -119,7 +117,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"addProductSegue"]) {
-        _wspAddProductViewController = [[WspAddProductViewController alloc] init];
+        _wspAddProductViewController = segue.destinationViewController;
         _wspAddProductViewController.actualBill = _currentBill;
     }
 }

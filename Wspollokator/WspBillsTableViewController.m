@@ -81,7 +81,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showBillSegue"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        _wspBillTableViewController = [[WspBillTableViewController alloc] init];
+        _wspBillTableViewController = segue.destinationViewController;
         _wspBillTableViewController.currentBill = [_bills objectAtIndex:indexPath.row];
     }
 }
