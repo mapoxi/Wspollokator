@@ -17,6 +17,7 @@
 		2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F8341ABED6D4004EF0CE /* WspMainMenuViewController.m */; };
 		2415F83B1ABEE56C004EF0CE /* WspPeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */; };
 		2415F8401AC032E3004EF0CE /* WspAddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */; };
+		244C62D91ADAB6D600F2D26D /* WspLoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244C62D81ADAB6D600F2D26D /* WspLoginTableViewController.m */; };
 		244D2A4E1ACEF2BB00395733 /* WspAddProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D2A4D1ACEF2BB00395733 /* WspAddProductViewController.m */; };
 		244D2A521ACEFCB800395733 /* WspBillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D2A501ACEFCB800395733 /* WspBillTableViewCell.m */; };
 		244D2A531ACEFCB800395733 /* WspBillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244D2A511ACEFCB800395733 /* WspBillTableViewCell.xib */; };
@@ -63,6 +64,8 @@
 		2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspPeopleTableViewController.m; sourceTree = "<group>"; };
 		2415F83E1AC032E3004EF0CE /* WspAddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddPersonViewController.h; sourceTree = "<group>"; };
 		2415F83F1AC032E3004EF0CE /* WspAddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddPersonViewController.m; sourceTree = "<group>"; };
+		244C62D71ADAB6D600F2D26D /* WspLoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspLoginTableViewController.h; sourceTree = "<group>"; };
+		244C62D81ADAB6D600F2D26D /* WspLoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspLoginTableViewController.m; sourceTree = "<group>"; };
 		244D2A4C1ACEF2BB00395733 /* WspAddProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspAddProductViewController.h; sourceTree = "<group>"; };
 		244D2A4D1ACEF2BB00395733 /* WspAddProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WspAddProductViewController.m; sourceTree = "<group>"; };
 		244D2A4F1ACEFCB800395733 /* WspBillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WspBillTableViewCell.h; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				24C85BC91AC822A2009D064D /* WspBillTableViewController.m */,
 				24C85BA51AC68008009D064D /* WspBillsTableViewController.h */,
 				24C85BA61AC68008009D064D /* WspBillsTableViewController.m */,
+				244C62D71ADAB6D600F2D26D /* WspLoginTableViewController.h */,
+				244C62D81ADAB6D600F2D26D /* WspLoginTableViewController.m */,
 				2415F8391ABEE56C004EF0CE /* WspPeopleTableViewController.h */,
 				2415F83A1ABEE56C004EF0CE /* WspPeopleTableViewController.m */,
 				2415F8331ABED6D4004EF0CE /* WspMainMenuViewController.h */,
@@ -335,6 +340,7 @@
 				24DA5B531AD050B8009F674D /* PersonWithProduct.m in Sources */,
 				2415F8351ABED6D4004EF0CE /* WspMainMenuViewController.m in Sources */,
 				24C85BD31AC95E15009D064D /* Product.m in Sources */,
+				244C62D91ADAB6D600F2D26D /* WspLoginTableViewController.m in Sources */,
 				2415F80C1ABD5808004EF0CE /* main.m in Sources */,
 				24C85BB61AC69A1C009D064D /* WspBillsTableViewCell.m in Sources */,
 				24C85BAD1AC68EEA009D064D /* WspAddBillViewController.m in Sources */,

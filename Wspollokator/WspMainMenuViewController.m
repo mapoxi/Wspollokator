@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"Person %@", _loggedPerson.personName);
     // Do any additional setup after loading the view.
 }
 

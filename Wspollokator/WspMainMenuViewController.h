@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface WspMainMenuViewController : UIViewController
+
+@property Person *loggedPerson;
 
 @end
