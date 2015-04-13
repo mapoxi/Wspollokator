@@ -76,7 +76,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:@"showBillSegue" sender:self];
-    [self.navigationController pushViewController:_wspBillTableViewController animated:YES];
 }
 
 
